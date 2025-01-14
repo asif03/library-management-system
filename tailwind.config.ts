@@ -8,6 +8,15 @@ export default {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    container: {
+      padding: {
+        DEFAULT: "1rem",
+        sm: "2rem",
+        lg: "4rem",
+        xl: "5rem",
+        "2xl": "6rem",
+      },
+    },
     extend: {
       colors: {
         background: "hsl(var(--background))",
@@ -20,13 +29,19 @@ export default {
           DEFAULT: "hsl(var(--popover))",
           foreground: "hsl(var(--popover-foreground))",
         },
-        primary: {
+        /*primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+        },*/
+        primary: {
+          DEFAULT: "#EED1AC",
         },
-        secondary: {
+        /*secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
+        },*/
+        secondary: {
+          DEFAULT: "#D6E0FF",
         },
         muted: {
           DEFAULT: "hsl(var(--muted))",
@@ -50,6 +65,10 @@ export default {
           "4": "hsl(var(--chart-4))",
           "5": "hsl(var(--chart-5))",
         },
+      },
+      fontFamily: {
+        "ibm-pixel-sans": ["IBM Plex Sans", "serif"],
+        "besas-neue": ["Bebas Neue", "serif"],
       },
       borderRadius: {
         lg: "var(--radius)",

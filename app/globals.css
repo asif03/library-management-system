@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -68,5 +64,17 @@ body {
   }
   body {
     @apply bg-background text-foreground;
+  }
+  h1 {
+    @apply text-7xl font-semibold;
+  }
+}
+
+@layer utilities {
+  .wrapper {
+    @apply flex flex-1 flex-col bg-pattern bg-cover min-h-screen;
+  }
+  .book-overview {
+    @apply flex lg:flex-row flex-col lg:gap-12 gap-8 justify-between items-center;
   }
 }
